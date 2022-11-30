@@ -12,7 +12,7 @@ public class week3_4CodingAssignment {
 		
 		//b. Add a new age to your array and repeat the step above to ensure it is dynamic (works for arrays
 		//of different lengths).
-		int[] ages2 = {3, 9, 23, 64, 2, 8, 93, 36};
+		int[] ages2 = {3, 9, 23, 64, 2, 8, 93, 33};
 		System.out.println(ages2[ages2.length -1] - ages2[0]);
 		
 		
@@ -23,7 +23,7 @@ public class week3_4CodingAssignment {
 		}
 		System.out.println(total / ages.length);
 		
-		//2. Create an array  , ring called names that contains the following values: "Sam", "Tommy", "Tim",
+		//2. Create an array of String called names that contains the following values: "Sam", "Tommy", "Tim",
 		//"Sally", "Buck", "Bob". 
 		String[] names = {"Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"};
 		
@@ -62,8 +62,8 @@ public class week3_4CodingAssignment {
 		//6. Write a loop to iterate over the nameLengths array and calculate the sum of all the elements in the array.
 		//Print the result to the console.
 		int totalNames = 0;
-		for (int x = 0; x < nameLengths.length; x++) {
-			totalNames += nameLengths[x];	
+		for (int i = 0; i < nameLengths.length; i++) {
+			totalNames += nameLengths[i];	
 		}
 		System.out.println(totalNames);
 	
@@ -129,8 +129,7 @@ public class week3_4CodingAssignment {
 		}
 }
 		
-		//10. Write a method that takes two arrays of double and returns true if the average of the elements in the first array is
-		// greater than the average of the elements in the second array.
+		//10. Write a method that takes an arrays of double and returns the average of all the elements in the array.
 		public static double average(double[]oneArray) {
 			double total = 0;
 			for(double number : oneArray) {
